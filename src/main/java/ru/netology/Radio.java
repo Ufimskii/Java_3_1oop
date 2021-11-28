@@ -82,6 +82,9 @@ public class Radio {
     public int getCurrentStation() {
         return currentStation;
     }
+    public void setCurrentStation(int currentStation) {
+        this.currentStation = currentStation;
+    }
 
     //Увеличение станции
     public int upStation() {
@@ -107,14 +110,14 @@ public class Radio {
 
 
     //Установка текущей станции
-    public void setCurrentStation(int currentStation) {
-        if (currentStation > maxStation) {
-            return;
-            }
-        if (currentStation < minStation) {
-            return;
-        }
-        this.currentStation = currentStation;
-    }
+//    public void setCurrentStation(int currentStation) {
+//        if (currentStation > maxStation) {
+//            return;
+//            }
+//        if (currentStation < minStation) {
+//            return;
+//        }
+//        this.currentStation = currentStation;
+//    }
 
 }
